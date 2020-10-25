@@ -1,5 +1,10 @@
-import re
+# PROGRAM TO CHECK IF USER PASSWORD IS STRONG, MEDIUM OR WEAK
 
+# IMPORT
+import re
+# END IMPORT
+
+# INPUT USERNAME AND PASSWORD
 def user_password():
   username = input("Create a username: ")
   password = input("Create a password: ")
@@ -55,6 +60,5 @@ def user_password():
   # PRINT IF PASSWORD IS MEDIUM
   else:
     print("Medium Password")
+
 user_password()
-  
-  
