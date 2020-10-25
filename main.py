@@ -36,21 +36,25 @@ def user_password():
   else:
     pwl = "strong"
   
-  # PRINT IF PASSWORD IS WEAK, MED OR STRONG
+  # PRINT IF PASSWORD IS STRONG
   if pwl == "strong" and uc == "strong" and lc == "strong" and num == "strong":
         print("Strong Password")
-  elif pwl == "weak" and num == "weak":
-    print("Weak Password. Try making your password at least 8 digits in length and be sure to include a combination Uppercase, Lowercase and numbers. Please try again.")
-    user_password()
-  elif uc == "weak":
-    print("Weak Password. Try making your password at least 8 digits in length and be sure to include a combination of Uppercase, Lowercase and numbers. Please try again.")
-    user_password()
-  elif lc == "weak":
-    print("Weak Password. Try making your password at least 8 digits in length and be sure to include a combination of Uppercase, Lowercase and numbers. Please try again.")
-    user_password()
+
+  # PRINT IF PASSWORD IS WEAK
+  elif uc == "weak" and num == "weak" and pwl == "weak":
+    print("Weak Password")
+  elif lc == "weak" and num == "weak" and pwl == "weak":
+    print("Weak Password")
+  elif num == "weak" and pwl == "weak":
+    print("Weak Password")
+  elif uc == "weak" and pwl == "weak":
+    print("Weak Password")
+  elif lc == "weak" and pwl == "weak":
+    print("Weak Password")
+
+  # PRINT IF PASSWORD IS MEDIUM
   else:
-    print("Medium Password.")
-  
+    print("Medium Password")
 user_password()
   
   
